@@ -8,7 +8,7 @@ GOARCH = $(strip $(ARCH))
 V = $(strip $(VERSION))
 P = $(strip $(INSTALL_PATH))
 
-BUILD_PATH = ./build/bin/
+BUILD_PATH = ./build/bin
 ARTIFACT_PATH = ./build/artifacts
 
 export GO_BUILD=GOOS=$(GOOS) GOARCH=$(GOARCH) go build -o $(BUILD_PATH)/promql_$(GOOS)_$(GOARCH) ./
